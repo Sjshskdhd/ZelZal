@@ -75,6 +75,7 @@ vcsi
 wand
 wikipedia
 wget
+sleep
 youtube_dl
 youtube-search
 youtube-search-python==1.6.1
