@@ -35,16 +35,16 @@ async def song2(event):
 @zedub.zed_cmd(pattern="اسال(?:\s|$)([\s\S]*)")
 async def song2(event):
     card = event.pattern_match.group(1)
-    chat = "@Az_12bot"
+    chat = "@ChatAi5Bot"
     await reply_id(event)
     zed = await edit_or_reply(event, "**- جـارِ الحصول علي اجابه ...**")
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message(card)
         except YouBlockedUserError:
-            await zedub(unblock("Az_12bot"))
+            await zedub(unblock("@ChatAi5Bot"))
             await conv.send_message(card)
-        await asyncio.sleep(15)
+        await asyncio.sleep(7)
         response = await conv.get_response()
         await event.client.send_read_acknowledge(conv.chat_id)
         await event.client.send_message(event.chat_id, response.message)
