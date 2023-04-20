@@ -44,7 +44,7 @@ async def song2(event):
         except YouBlockedUserError:
             await zedub(unblock("@ChatAi5Bot"))
             await conv.send_message(card)
-        await asyncio.sleep(7)
+        await asyncio.sleep(15)
         response = await conv.get_response()
         await event.client.send_read_acknowledge(conv.chat_id)
         await event.client.send_message(event.chat_id, response.message)
