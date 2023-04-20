@@ -194,7 +194,7 @@ class Config(object):
         OLDZED_REPO = "https://github.com/Zed-Thon/ZED_USERBOT"
     OLDZED_REPOBRANCH = os.environ.get("OLDZED_REPOBRANCH", "oldzed")
     VC_REPO = os.environ.get("VC_REPO", "https://github.com/zeinn0/crvc")
-    VC_REPOBRANCH = os.environ.get("VC_REPOBRANCH", "main")
+    VC_REPOBRANCH = os.environ.get("VC_REPOBRANCH", "beta")
 
 class Production(Config):
     LOGGER = False
