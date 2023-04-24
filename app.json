@@ -1,0 +1,82 @@
+{
+  "name": "cr userbot",
+  "description": " سـورس ڪࢪستيڼ 𝗰𝗿𝗶𝘀𝘁𝗲𝗻 𓅛 〕التحـديث الجديـد افضـل سـورسـات تليثـون يـوزربـوت العربيـة - المميـزات : ›  اول سـورس عربـي تريبـل سـورس〔 2 × 1 〕تليثـون ¹ + اغـاني مكـالمات ² › عربـي بالكـامل › تحديثـات متواصـله › مبنـي ع آخـر اصـدار لـ لغـة البايثـون〔 Python 3.5 〕- مطـور السـورس : الهقر زين › @devpokemon",
+  "logo": "https://telegra.ph//file/9fe03ab9b52e661267120.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/zeinn0/cr",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "VCMODE": {
+      "description": "سبها زي مهي يسطا",
+      "value": "True"
+    },
+    "APP_ID": {
+      "description": "كـود ايبي هـاش〔 Api id 〕", 
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "كـود ايبي هـاش〔 Api hash〕",
+      "value": ""
+    },
+    "ENV": {
+      "description": "لا تغير هذه القيمه",
+      "value": "ANYTHING"
+    },
+    "COMMAND_HAND_LER": {
+      "description": "لا تغير هذه القيمه",
+      "value": "."
+    },
+    "STRING_SESSION": {
+      "description": "كـــود البايروجرام - الكـود الكبيـر مـن حـافظـة حسـابـكك",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "هنا ضع توكن بوتك الذي صنعته",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "هنا ضع الايبي كي الخاص بحساب هيروكو من هذا الرابط https://dashboard.heroku.com/account",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اسم التطبيق",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
+      "value": "Asia/Baghdad",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/danzzcoding/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/riganf/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+  },{
+    "url": "heroku/python"
+  }],
+  "stack": "heroku-22"
+}
